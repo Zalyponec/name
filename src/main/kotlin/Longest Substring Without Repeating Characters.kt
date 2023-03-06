@@ -5,7 +5,6 @@ fun main(args: Array<String>) {
 fun lengthOfLongestSubstring(s: String): Int {
     val set = mutableSetOf<Char>()
     var currentMax = 0
-
     for (i in s.indices) {
         currentMax = maxOf(currentMax, set.size)
         set.clear()
